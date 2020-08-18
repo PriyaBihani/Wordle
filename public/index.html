@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    #image{
+       max-width:200px;
+        max-height:200px;
+    }
+    .custom{
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    .custom:focus{
+        outline:none;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <h1 class=" display-1 text-center">Wordle</h1>
+        <hr>
+        <div class="float-md-left mt-5 ml-5" >
+            <div class="form-group">
+                
+                <label>Enter the word</label>
+                <input type="text" id ="word" class="form-control pr-5 input-lg custom" placeholder="Enter"><br>
+                <div class="float-sm-right">
+                    <button  class="btn btn-default btn-outline-dark mr-1"id="send">Get Image</button> 
+                    <button class="btn btn-default btn-outline-dark" id="random-word">Random word</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="float-md-right mt-5 ml-5">
+            <img src="" id ="image">
+        </div>    
+    </div>
+
+    
+    <script src ="index.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src ="js/bootstrap.min.js"></script>
+</body>
+</html>
